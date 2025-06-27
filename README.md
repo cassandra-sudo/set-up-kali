@@ -6,6 +6,7 @@
 
 ![](https://raw.githubusercontent.com/cassandra-sudo/set-up-kali/main/image/filesystem.png)
 
+**User root, su, sudo**
 
 🔥 <code>/</code> := <code>root</code> ('/' isn't command, is a location).
 ⭐ su := Switch User by deafaul root user => it asks you for the password.
@@ -203,9 +204,3 @@ Este comando le dice a Linux que muestre todos mis servicios y luego envíe esa 
 - <code>mv</code> file_name new_file_name
 - <code>rm</code> file_name
 - <code>rm -r</code>
-
-Zsh
-```
-
-```
-<code></code>
