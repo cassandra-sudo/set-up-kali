@@ -10,9 +10,9 @@
 
 🔥 <code>/</code> := <code>root</code> ('/' isn't command, is a location).
 
-⭐ su := Switch User by deafaul root user => it asks you for the password.
+⭐ <code>su</code> := Switch User by deafaul root user => it asks you for the password.
 
-🔴 sudo := SuperUser Do
+🔴 <code>sudo</code> := SuperUser Do
 
 **🗂️ Como listar a los usuarios**:
 
@@ -21,10 +21,15 @@ Zsh
 cat /etc/passwd
 ```
 /*
+
 output
+
 root:x:0:0:root:/root:/bin/bash
+
 gabriel:x:1000:1000:Gabriel,,,:/home/gabriel:/bin/bash
+
 postgres:x:124:135:PostgreSQL administrator,,,:/var/lib/postgresql:/bin/bash
+
 */
 
 😎 Campos importantes:
@@ -33,9 +38,9 @@ postgres:x:124:135:PostgreSQL administrator,,,:/var/lib/postgresql:/bin/bash
 
 💡 UID: Identificador único de usuario.
 
-📌 0 = root
+📌 <code>x:0</code> = root
  
-📍 100+ = usuarios normales
+📍 <code>x:100+</code> = usuarios normales
 
 ***
 **📜 Como ver y cambiar contraseñas**
