@@ -14,11 +14,11 @@
 
 🔴 sudo := SuperUser Do
 
-**🗂️ How show list users**:
+**🗂️ Como listar a los usuarios**:
 
 Zsh
 ```
-$ cat /etc/passwd
+cat /etc/passwd
 ```
 /*
 output
@@ -29,13 +29,15 @@ postgres:x:124:135:PostgreSQL administrator,,,:/var/lib/postgresql:/bin/bash
 
 😎 Campos importantes:
 
- 🚀 usuario:x:UID:GID:Nombre:/home/usuario:/bin/bash
+🚀 usuario:x:UID:GID:Nombre:/home/usuario:/bin/bash
 
 💡 UID: Identificador único de usuario.
 
- 📌 0 = root
- 📍 100+ = usuarios normales
+📌 0 = root
+ 
+📍 100+ = usuarios normales
 
+***
 **📜 Como ver y cambiar contraseñas**
 
 📐 Ver estado de contraseñas:
@@ -65,15 +67,19 @@ Tipos de permisos:
 
 Cada archivo o carpeta tiene 3 tipos de usuarios  y 3 tipos de permisos :
 
-Tipo de usuario      Descripción
-    u (user)             El dueño del archivo
-    g (group)            Los usuarios del grupo
-    o (others)           Todos los demás
+| Tipo de usuario | Descripción |
+|:----------|:--------:|
+| u (user) | El dueño del archivo |
+| g (group) | Los usuarios del grupo |
+| o (others) | Todos los demás |
 
-Permisos             Acción
-    r (read)         Leer contenido
-    w (write)        Editar
-    x (excecute)     Ejecutar como programa o entrar a carpeta
+
+| Permisos | Acción |
+|:----------|:--------:|
+| r (read) | Leer contenido |
+| w (write) | Editar |
+| x (excecute) | Ejecutar como programa o entrar a la carpeta |
+
         
 **👀 Show permissions**
 
@@ -104,15 +110,15 @@ This mean:
 
 Los usuarios pueden pertenecer a grupos . Algunos grupos importantes son:
 
-GRUPO            DESCRIPCIÓN
+| GRUPO | DESCRIPCIÓN |
+|:----------|:--------:|
+| sudo | Usuarios que pueden usar «sudo» |
+| adm | Pueden leer logs del sistema |
+| cdrom, plugdev | Para accesos a dispositivos |
 
-sudo             Usuarios que pueden usar «sudo».
-
-adm              Pueden leer logs del sistema.
-
-cdrom, plugdev   Para accesos a dispositivos
 
 Para ver a qué groupos perteneces:
+
 <code>$ groups</code>
 
 Para añadir a un usuario al grupo sudo (dándole permisos de administrador):
