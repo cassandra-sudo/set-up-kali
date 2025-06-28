@@ -9,11 +9,17 @@
 **User root, su, sudo**
 
 🔥 <code>/</code> := <code>root</code> ('/' isn't command, is a location).
+
 ⭐ su := Switch User by deafaul root user => it asks you for the password.
+
 🔴 sudo := SuperUser Do
 
 **🗂️ How show list users**:
+
+Zsh
+```
 $ cat /etc/passwd
+```
 /*
 output
 root:x:0:0:root:/root:/bin/bash
@@ -23,12 +29,15 @@ postgres:x:124:135:PostgreSQL administrator,,,:/var/lib/postgresql:/bin/bash
 
 😎 Campos importantes:
 
-🚀 usuario:x:UID:GID:Nombre:/home/usuario:/bin/bash
-    💡 UID: Identificador único de usuario.
-        📌 0 = root
-        📍 100+ = usuarios normales
+ 🚀 usuario:x:UID:GID:Nombre:/home/usuario:/bin/bash
+
+💡 UID: Identificador único de usuario.
+
+ 📌 0 = root
+ 📍 100+ = usuarios normales
 
 **📜 Como ver y cambiar contraseñas**
+
 📐 Ver estado de contraseñas:
 
 Zsh
@@ -51,6 +60,7 @@ passwd
 ```
 
 **🔒 Permisos en Debian**
+
 Tipos de permisos:
 
 Cada archivo o carpeta tiene 3 tipos de usuarios  y 3 tipos de permisos :
@@ -81,17 +91,25 @@ Un posible output seria:
 This mean:
 
 ⭐ -rw-r--r--: permisos
+
 💫 usuario: dueño
+
 💼 usuario: grupo
+
 ⚡ 4096: tamaño
+
 😃 archivo.txt: nombre
 
 **📌 Grupos y privilegios**
+
 Los usuarios pueden pertenecer a grupos . Algunos grupos importantes son:
 
 GRUPO            DESCRIPCIÓN
+
 sudo             Usuarios que pueden usar «sudo».
+
 adm              Pueden leer logs del sistema.
+
 cdrom, plugdev   Para accesos a dispositivos
 
 Para ver a qué groupos perteneces:
@@ -100,16 +118,19 @@ Para ver a qué groupos perteneces:
 Para añadir a un usuario al grupo sudo (dándole permisos de administrador):
 
 Zsh
+
 <code>sudo usermod -aG sudo nombredeusuario</code>
 
 Finding yourself with pwd
 
 Zsh
+
 <code>pwd</code>
 
 Cheking your login whoami
 
 Zsh
+
 <code>whoami</code>
 
 **🆘 Getting Help**
