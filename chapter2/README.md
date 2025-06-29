@@ -1,4 +1,4 @@
-![](https://raw.githubusercontent.com/cassansra-sudo/set-up-kali/main/chapter2/image/cover.png)
+![](https://raw.githubusercontent.com/cassandra-sudo/set-up-kali/main/chapter2/image/cover.png)
 
 # 🗒️ Text Manipulation
 
@@ -8,13 +8,14 @@ Si no viene instalado por defecto, lo descargamos con <code>sudo apt install sno
 
 Verifica que este instalado:
 
-Zsh
+bash
 ```
 snort -v
 ```
 
 ### ⭐ Viewing Files
 
+bash
 ```
 # The most basic display command
 cat /etc/snort/snort.lua
@@ -34,7 +35,7 @@ nl /etc/snort/snort.lua
 
 El comando grep es probablemente el más utilizado para la manipulación de texto. Permite filtrar el contenido de un archivo para su visualización. Por ejemplo, si desea ver todas las líneas que incluyen la palabra «output» en su archivo <code>snort.conf</code>, puede usar <code>cat</code> y pedirle que muestre solo esas líneas.
 
-Zsh
+bash
 ```
 cat /etc/snort/snort.lua | grep output
 ```
@@ -46,10 +47,13 @@ Hay muchas maneras de resolver este desafío; aquí te muestro qué líneas debe
 
 **Paso 1**
 ***
+
+bash
 ```
 nl /etc/snort/snort.lua | grep configure
 ```
 
-![](https://raw.githubusercontent.com/cassansra-sudo/set-up-kali/main/chapter2/image/cat_snort.png)
+![](https://raw.githubusercontent.com/cassandra-sudo/set-up-kali/main/chapter2/image/cat_snort.png)
 
-Podemos ver que la línea **-- 5. configure detection**: Configurar complementos de salida es la línea 512, y sabemos que queremos las cinco líneas anteriores a la línea 512, así como la línea 512 en sí (es decir, las líneas 507 a 512).
+Podemos ver que la línea **-- 5. configure detection**: Configurar complementos de salida es la línea 143, y sabemos que queremos las cinco líneas anteriores a la línea 143, así como la línea 512 en sí (es decir, las líneas 138 a 143).
+
